@@ -1,21 +1,26 @@
 <?php
-
 session_start();
 include_once('config.php');
 
-if(empty($_SESSION['username'])){
+if (empty($_SESSION['username'])) {
     header('Location: login.php');
+    exit;
 }
 
-$id = $_GET['id'];
-$sql = "SELECT * from users where id=id";
-$selectUser = $conn=>prepare();
-$selectUser->bindParam(":id", $id);
+$id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
+
+$sql = "SELECT * FROM users WHERE id = :id";
+$selectUser = $conn->prepare($sql);
+$selectUser->bindParam(':id', $id, PDO::PARAM_INT);
 $selectUser->execute();
 
-$user_data = $selectUser->fetch();
+$user_data = $selectUser->fetch(PDO::FETCH_ASSOC);
 
+if (!$user_data) {
+    die('User not found');
+}
 ?>
+
 
 <?php include("header.php"); ?>
 	

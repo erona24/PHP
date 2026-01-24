@@ -66,6 +66,11 @@
               <span data-feather="file"></span>
               Edit Profile
             </a>
+            <a class="nav-link" href="profile.php?id=<?= $user_data['id'];?>">
+            <?php ?>
+              <span data-feather="file"></span>
+              Edit Product
+            </a>
           </li>
         </ul>
       </div>

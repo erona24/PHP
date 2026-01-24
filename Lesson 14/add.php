@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     $surname = $_POST['surname'];
     $email = $_POST['email'];
 
-    $sql = "INSERT INTO user(`name`, `surname`, `email`)
+    $sql = "INSERT INTO users(`name`, `surname`, `email`)
             VALUES(:name, :surname, :email)";
 
     $sqlQuery = $conn->prepare($sql);

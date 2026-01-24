@@ -1,14 +1,12 @@
 <?php
 
 
-session_start();
-
 
 
 $user = "root";
 $pass = "";
 $server = "localhost";
-$db = "erona";
+$db = "ylliphp";
 
 
 try {
