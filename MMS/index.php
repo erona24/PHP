@@ -81,20 +81,20 @@
 			</div>
 			<div class="form-floating">
 				<input type="password" class="form-control" id="floatingInput" placeholder="Password" name="password">
-				<label for="floatingInput"> password</label>
+				<label for="floatingInput"> Password</label>
 			</div>
 			<div class="form-floating">
 				<input type="password" class="form-control" id="floatingInput" placeholder="Configpassword" name="confirm_password">
-				<label for="floatingInput"> confirm password</label>
+				<label for="floatingInput"> Confirm Password</label>
 			</div>
 
 			<div class="checkbox mb-3">
 				<label for="">
-					<input type="checkbox" value="remember-me"> Remember me
+					<input type="checkbox" value="remember-me"> Remember Me
 				</label>
 			</div>
 
-			<button class="w-100 btn btn-lg btn-primary" type="submit" name="submit">Signup</button>
+			<button class="w-100 btn btn-lg btn-primary" type="submit" name="submit">Sign up</button>
 
 			<span>Already have an account: </span><a href="login.php"> Sign in </a>
 
