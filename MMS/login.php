@@ -57,50 +57,36 @@
 	}
 	</style>
 </head>
-
 <body class="text-center">
+
     <main class="form-signin">
 
-        <form action="register.php" method="post">
+    <form action="loginLogic.php" method="post">
 
-			<h1 class="h3 mb-3 fw-normal">Register</h1>
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
-			<div class="form-floating">
-				<input type="text" class="form-control" id="floatingInput" placeholder="emri" name="emri">
-				<label for="floatingInput"> Emri</label>
-			</div>
+    <div class="form-floating">
+       <input type="text" class="form-control" id="floatingInput" placeholder="username" name="username">
+       <label for="floatingInput">Username</label>                                                            
+    </div>
 
-			<div class="form-floating">
-				<input type="text" class="form-control" id="floatingInput" placeholder="username" name="username">
-				<label for="floatingInput"> Username</label>
-			</div>
+    <div class="form-floating">
+       <input type="text" class="form-control" id="floatingInput" placeholder="password" name="password">
+       <label for="floatingInput">Password</label>                                                            
+    </div>
 
-			<div class="form-floating">
-				<input type="email" class="form-control" id="floatingInput" placeholder="email" name="email">
-				<label for="floatingInput"> Email</label>
-			</div>
-			<div class="form-floating">
-				<input type="password" class="form-control" id="floatingInput" placeholder="password" name="password">
-				<label for="floatingInput"> Password</label>
-			</div>
-			<div class="form-floating">
-				<input type="password" class="form-control" id="floatingInput" placeholder="Configpassword" name="confirm_password">
-				<label for="floatingInput"> Confirm Password</label>
-			</div>
-
-			<div class="checkbox mb-3">
+    <div class="checkbox mb-3">
 				<label for="">
 					<input type="checkbox" value="remember-me"> Remember Me
 				</label>
 			</div>
 
-			<button class="w-100 btn btn-lg btn-primary" type="submit" name="submit">Sign up</button>
+			<button class="w-100 btn btn-lg btn-primary" type="submit" name="submit">Sign in</button>
 
-			<span>Already have an account: </span><a href="login.php"> Sign in </a>
+			<span>If you dont have an account: </span><a href="index.php"> Sign up </a>
 
-
-
-        </form>
+    </form>
+        
     </main>
 
 </body>
